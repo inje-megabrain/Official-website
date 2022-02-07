@@ -1,13 +1,40 @@
+.header_inner {
+    position: relative;
+    max-width: 1280px;
+    height: 144px;
+    margin: 0 auto;
 
-.title {
-    background-color: black;
-    height:80px;
-    h2 {
-        margin: 0;
-        padding: 20px;
-        color: ghostwhite;
-        font-family: "Adobe Caslon Pro", serif;
-        font-style: italic;
-        font-size: 2.0em;
+    ul {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        margin-right: 98px;
     }
+
+    h1 {
+        color: steelblue;
+    }
+}
+
+.list_box {
+
+}
+
+.list {
+    float: left;
+    height: 40px;
+    min-width: 67px;
+    margin-right: 58px;
+    position: relative;
+    text-align: left;
+
+    a {
+        display: block;
+        font-size: 20px;
+        letter-spacing: -0.5px;
+        color: #000;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
 }

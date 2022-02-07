@@ -1,9 +1,9 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #4a4a4a;
+  font-size: 14px;
+  -webkit-text-size-adjust: none;
+  font-family: -apple-system, "NanumSquareR", "Roboto", sans-serif;
 }
 
 a {
@@ -17,4 +17,13 @@ a {
 
 main{
   padding: 20px;
+}
+
+li, p, dt, dd, div {
+  word-break: keep-all;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, select, textarea, p, blockquote, th, td, legend, button {
+  margin: 0;
+  padding: 0;
 }
