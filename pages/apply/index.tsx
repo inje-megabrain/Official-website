@@ -5,7 +5,7 @@ const Home: NextPage = () => {
     return (
         <>
             <h1>지원하기</h1>
-            <Paper variant="outlined">
+            <Paper variant="outlined" >
             <List>
                 <ListItemButton component="a" href="/apply/2022-1">
                     <ListItemText
