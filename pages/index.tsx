@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import styles from '../styles/Home.module.scss'
-import { Paper, Card, CardContent, Typography, Grid} from '@mui/material';
+import { Paper, Card, CardContent, Typography, Grid, CardMedia} from '@mui/material';
 import { MeetingRoomOutlined, GroupsOutlined, LocalFireDepartmentOutlined, TipsAndUpdatesOutlined } from '@mui/icons-material';
 
 const Home: NextPage = () => {
