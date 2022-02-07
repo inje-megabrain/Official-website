@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Page() {
     return <div>
         <h1>About us</h1>
-        <p>2220 is ironical NFT art studio.
+        <p> is ironical NFT art studio.
             Based in South Korea, Seoul.</p>
         <ol>
             <li><p>Jungmin Ha / Graphic artist</p></li>
