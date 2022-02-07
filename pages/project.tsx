@@ -10,7 +10,7 @@ const Home: NextPage = () => {
                         <CardMedia
                             component="img"
                             height="250"
-                            image="../static/images/project/thumbnail02.png"
+                            image="/images/project/thumbnail02.png"
                             alt="thumbnail"
                         />
                         <CardContent>
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
                         <CardMedia
                             component="img"
                             height="250"
-                            image="../static/images/project/thumbnail01.png"
+                            image="/images/project/thumbnail01.png"
                             alt="thumbnail"
                         />
                         <CardContent>

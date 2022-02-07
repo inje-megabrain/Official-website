@@ -18,7 +18,7 @@ const Home: NextPage = () => {
                     <ListItem><ListItemText primary="- 구현한 코드에 대해 E2E 테스트를 작성하고, 읽기 좋은 코드로 리팩터링합니다."/></ListItem>
                     <h3>2. 웹 프로그래밍 🛠</h3>
                     <ListItem><ListItemText primary="- 스프링 프레임워크 기반으로 웹 애플리케이션을 개발하는 경험을 합니다."/></ListItem>
-                    <ListItem><ListItemText primary="- Node.js 기반의 프론트엔드 웹 애플리케이션을 제작합니다."/></ListItem>
+                    <ListItem><ListItemText primary="- React 기반의 프론트엔드 웹 애플리케이션을 제작합니다."/></ListItem>
                     <ListItem><ListItemText primary="- 프론트엔드 웹 애플리케이션에서 고려해야할 테스트 범위와 종류에 대해 학습합니다"/></ListItem>
                     <ListItem><ListItemText primary="- 데이터베이스 설계하는 경험을 합니다 (MySQL, DBMS CRUD-)"/></ListItem>
                     <h3>3. 팀 프로젝트 🤝</h3>
