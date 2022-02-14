@@ -1,10 +1,18 @@
 import type { NextPage } from "next";
 import {List, ListItemButton, ListItemText, Paper} from "@mui/material";
+import styles from "../../styles/Home.module.scss";
 
 const Home: NextPage = () => {
     return (
         <>
             <h1>지원하기</h1>
+            <Paper variant="outlined" square className={styles.rows}>
+                <h2>메가브레인에 들어오시면 얻을 수 있습니다.</h2>
+                <h3>👥 개발 커뮤니티 </h3>
+                <h3>🖥 동아리방 (E105) 개인 자리 셋업</h3>
+                <h3>📚 최신 개발 진로 커리큘럼</h3>
+                <h3>📝 개인 개발용 서브 도메인</h3>
+            </Paper>
             <Paper variant="outlined" >
             <List>
                 <ListItemButton component="a" href="/apply/2022-1">

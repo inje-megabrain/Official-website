@@ -88,12 +88,6 @@ const Home: NextPage = () => {
                     동료의 프로젝트를 빠른 시간에 이해하고, 나의 해결 방식과 비교하며 피드백을 경청하는 과정. 단순히 코딩 스킬 이상의 것을 배워갈 수 있습니다.
                 </Typography>
             </Paper>
-            <Paper variant="outlined" square className={styles.rows}>
-                <h2>메가브레인에 들어오시면 얻을 수 있습니다.</h2>
-                <h3>👥 개발 커뮤니티 </h3>
-                <h3>🖥 동아리방 개인 자리 셋업</h3>
-                <h3>📚 최신 개발 진로 커리큘럼</h3>
-            </Paper>
         </>
     );
 };
