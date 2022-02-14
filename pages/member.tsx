@@ -5,7 +5,6 @@ const Home: NextPage = () => {
     return (
         <>
             <h1>회원 소개</h1>
-            <h2>Operator</h2>
             <Grid container spacing={2}>
                 <Grid item xs={12} md={4}>
                     <Card>
@@ -14,7 +13,7 @@ const Home: NextPage = () => {
                             <Typography variant="h5" component="div">
                             </Typography>
                             <Typography variant="body2">
-                                Leader
+                                팀장
                             </Typography>
                         </CardContent>
                     </Card>
@@ -26,7 +25,7 @@ const Home: NextPage = () => {
                             <Typography variant="h5" component="div">
                             </Typography>
                             <Typography variant="body2">
-                                Assistant Leader
+                                부팀장
                             </Typography>
                         </CardContent>
                     </Card>
@@ -38,14 +37,24 @@ const Home: NextPage = () => {
                             <Typography variant="h5" component="div">
                             </Typography>
                             <Typography variant="body2">
-                                Senior Research Engineer
+                                기술담당
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <Card>
+                        <CardContent>
+                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>최진서 | 2018</Typography>
+                            <Typography variant="h5" component="div">
+                            </Typography>
+                            <Typography variant="body2">
+
                             </Typography>
                         </CardContent>
                     </Card>
                 </Grid>
             </Grid>
-            <h2>Member</h2>
-            <p>to be continued...</p>
         </>
     );
 };
