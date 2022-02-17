@@ -49,7 +49,7 @@ const Home: NextPage = () => {
                             <Typography variant="h5" component="div">
                             </Typography>
                             <Typography variant="body2">
-
+                                정회원
                             </Typography>
                         </CardContent>
                     </Card>

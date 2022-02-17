@@ -1,12 +1,29 @@
 import type { NextPage } from "next";
 import styles from '../styles/Home.module.scss'
-import { Paper, Card, CardContent, Typography, Grid, CardMedia} from '@mui/material';
+import { Paper, Card, CardContent, Typography, Grid, Container, Box} from '@mui/material';
 import { MeetingRoomOutlined, GroupsOutlined, LocalFireDepartmentOutlined, TipsAndUpdatesOutlined } from '@mui/icons-material';
 
 const Home: NextPage = () => {
     return (
         <>
-            <h2>개발자의 지속 가능한 성장을 위한 학습 동아리, <u>메가브레인</u>입니다.</h2>
+            <Box component="span" sx={
+                {
+                    padding: '50px',
+                    backgroundColor: "black",
+                    color: 'white',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignContent: 'center',
+                    alignItems: 'center',
+                    backgroundImage: `url(${"/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg"})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    marginTop: '20px',
+                    marginBottom: '20px',
+                }} >
+                <h1>개발자의<br />지속 가능한<br /> 성장을 위한<br /> 학습 동아리,<br /> <u>메가브레인</u></h1>
+            </Box>
+
             <Typography variant="body1">메가브레인은 단순히 뛰어난 프로그래밍 스킬을 가진 사람이 아닌, 사람들과 끊임없이 커뮤니케이션하고 서로에게 배우고 공유하며 문제를 해결해가는 사람, 그렇게 더 큰 미래를 그리는 사람이 좋은 개발자이고 지속 가능한 개발자라고 생각합니다.<br /><br />
             좋은 경험과 습관을 가진 지속 가능한 개발자 양성을 목표로, 여러 선배들이 모여 만들어낸 소프트웨어 학술 동아리입니다. 누구에게나 열려 있는 기회, 그러나 강도 높은 주도적인 문제 해결의 경험을 제공합니다. 세상이 빠르게 변하는 만큼 메가브레인은 매년 새로운 시도들로 새로운 가능성을 찾습니다.
             </Typography>
