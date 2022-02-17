@@ -24,7 +24,7 @@ const Home: NextPage = () => {
                                 Recoil 0.6.1
                                 Axios 0.25.0
                                 Grommet 2.20.1
-                                JWT-decide 3.1.2
+                                JWT-decode 3.1.2
                                 styled-components 5.3.3<br /><br/>
 
                                 backend
