@@ -1,42 +1,71 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Created by https://www.toptal.com/developers/gitignore/api/yarn,macos,nextjs,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=yarn,macos,nextjs,react
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+### macOS ###
+# General
 .DS_Store
-*.pem
+.AppleDouble
+.LSOverride
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Icon must end with two \r
+Icon
 
-# local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### NextJS ###
+# Next build dir
+.next/
+
+### react ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
+### yarn ###
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 
 .yarn/*
-!.yarn/cache
+!.yarn/releases
 !.yarn/patches
 !.yarn/plugins
-!.yarn/releases
 !.yarn/sdks
 !.yarn/versions
 
-# vercel
-.vercel
+# if you are NOT using Zero-installs, then:
+# comment the following lines
+!.yarn/cache
+
+# and uncomment the following lines
+# .pnp.*
+
+# End of https://www.toptal.com/developers/gitignore/api/yarn,macos,nextjs,react
