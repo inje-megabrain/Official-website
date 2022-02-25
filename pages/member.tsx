@@ -25,7 +25,7 @@ const Home: NextPage = () => {
                             <Typography variant="h5" component="div">
                             </Typography>
                             <Typography variant="body2">
-                                부팀장
+                                기획담당
                             </Typography>
                         </CardContent>
                     </Card>
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
                             <Typography variant="h5" component="div">
                             </Typography>
                             <Typography variant="body2">
-                                기술담당
+                                교육담당
                             </Typography>
                         </CardContent>
                     </Card>
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
                             <Typography variant="h5" component="div">
                             </Typography>
                             <Typography variant="body2">
-                                정회원
+                                사무담당
                             </Typography>
                         </CardContent>
                     </Card>
