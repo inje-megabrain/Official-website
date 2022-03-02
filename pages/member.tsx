@@ -61,6 +61,19 @@ const Home: NextPage = () => {
                 <Grid item xs={12} md={4}>
                     <Card>
                         <CardContent>
+                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>2021, 정회원</Typography>
+                            <Typography variant="h5" component="div">
+                                신종웅
+                            </Typography>
+                            <Typography variant="body2">
+
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <Card>
+                        <CardContent>
                             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>2018, 정회원</Typography>
                             <Typography variant="h5" component="div">
                                 성병석
@@ -74,9 +87,9 @@ const Home: NextPage = () => {
                 <Grid item xs={12} md={4}>
                     <Card>
                         <CardContent>
-                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>2021, 정회원</Typography>
+                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>2018, 정회원</Typography>
                             <Typography variant="h5" component="div">
-                                신종웅
+                                최원석
                             </Typography>
                             <Typography variant="body2">
 
