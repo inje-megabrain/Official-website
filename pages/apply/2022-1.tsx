@@ -12,8 +12,8 @@ const Home: NextPage = () => {
                 면접 : 추가 일정은 추후 개인 공지
             </Typography>
             <br />
-            <Button variant="contained" disableElevation href="https://notionforms.io/forms/2022-4" size="large">
-                지원하기
+            <Button variant="contained" disabled={true} disableElevation href="https://notionforms.io/forms/2022-4" size="large">
+                모집 기간에 오픈 예정
             </Button>
         </>
     );
