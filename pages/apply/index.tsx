@@ -12,7 +12,7 @@ const Home: NextPage = () => {
                     <ListItemButton component="a" href="/apply/2022-1">
                         <ListItemText
                             primary="2022년 1학기 신입생 준회원"
-                            secondary=" 2022년 2월 25일(금) ~ 2022년 3월 8일(화)"
+                            secondary=" 2022년 3월 4일(금) ~ 2022년 3월 11일(금)"
                         />
                         <ArrowForwardIos />
                     </ListItemButton>
