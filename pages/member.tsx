@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                 <Grid item xs={12} md={4}>
                     <Card>
                         <CardContent>
-                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>2018, 학술담당</Typography>
+                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>2018, 기술담당</Typography>
                             <Typography variant="h5" component="div">
                                 박성훈
                             </Typography>
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                 <Grid item xs={12} md={4}>
                     <Card>
                         <CardContent>
-                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>2018, 사무담당</Typography>
+                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>2018, 정회원</Typography>
                             <Typography variant="h5" component="div">
                                 최진서
                             </Typography>
