@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                 <Grid item xs={12} md={4}>
                     <Card>
                         <CardContent>
-                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>2018, 정회원</Typography>
+                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>2018, 인사담당</Typography>
                             <Typography variant="h5" component="div">
                                 최진서
                             </Typography>
