@@ -60,8 +60,8 @@ const Home: NextPage = () => {
                         <CardContent>
                             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>2018, 인사담당</Typography>
                             <Typography variant="h5" component="div">
-                                최진서 <IconButton color="primary" aria-label="github profile" disabled = {true}size="large"
-                                                onClick={() => window.open('https://github.com/', '_blank')}>
+                                최진서 <IconButton color="primary" aria-label="github profile" size="large"
+                                                onClick={() => window.open('https://github.com/Dark-jin', '_blank')}>
                                 <GitHubIcon />
                             </IconButton>
                             </Typography>
@@ -108,7 +108,7 @@ const Home: NextPage = () => {
                         <CardContent>
                             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>2018, 정회원</Typography>
                             <Typography variant="h5" component="div">
-                                최원석 <IconButton color="primary" aria-label="github profile" disabled = {true}size="large"
+                                최원석 <IconButton color="primary" aria-label="github profile" disabled = {true} size="large"
                                                 onClick={() => window.open('https://github.com/', '_blank')}>
                                 <GitHubIcon />
                             </IconButton>
