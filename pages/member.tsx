@@ -22,7 +22,7 @@ const Home: NextPage = () => {
                 color="text.secondary"
                 gutterBottom
               >
-                백엔드 개발자
+                개발자 | 팀장
               </Typography>
               <Typography variant="h5" component="div">
                 문상원{" "}
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
                 color="text.secondary"
                 gutterBottom
               >
-                프론트엔드 개발자
+                개발자 | 기획담당
               </Typography>
               <Typography variant="h5" component="div">
                 박영건{" "}
@@ -76,7 +76,7 @@ const Home: NextPage = () => {
                 color="text.secondary"
                 gutterBottom
               >
-                백엔드 개발자
+                개발자 | 기술담당
               </Typography>
               <Typography variant="h5" component="div">
                 박성훈{" "}
@@ -103,7 +103,7 @@ const Home: NextPage = () => {
                 color="text.secondary"
                 gutterBottom
               >
-                백엔드 개발자
+                개발자 | 인사담당
               </Typography>
               <Typography variant="h5" component="div">
                 최진서{" "}
@@ -130,7 +130,7 @@ const Home: NextPage = () => {
                 color="text.secondary"
                 gutterBottom
               >
-                프론트엔드 개발자
+                개발자 | 정회원
               </Typography>
               <Typography variant="h5" component="div">
                 신종웅{" "}
@@ -157,7 +157,7 @@ const Home: NextPage = () => {
                 color="text.secondary"
                 gutterBottom
               >
-                프론트엔드 개발자
+                개발자 | 정회원
               </Typography>
               <Typography variant="h5" component="div">
                 성병석{" "}
@@ -184,7 +184,7 @@ const Home: NextPage = () => {
                 color="text.secondary"
                 gutterBottom
               >
-                프론트엔드 개발자
+                개발자 | 정회원
               </Typography>
               <Typography variant="h5" component="div">
                 최원석{" "}
