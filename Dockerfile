@@ -1,16 +1,18 @@
-FROM node:alpine
+FROM node:14-alpine
 
 ENV PORT 3000
+
+USER root
 
 WORKDIR /usr/src/app
 
 COPY package*.json ./
-RUN npm install
+RUN yarn install
 
 COPY ./ ./
 
 ENV NODE_ENV production
 
-RUN npm run build
+RUN yarn run build
 
-CMD ["npm", "run", "start"]
+CMD ["yarn", "run", "start"]
