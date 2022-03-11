@@ -20,7 +20,6 @@ const Home: NextPage = () => {
                             primary="2022년 1학기 신입생 준회원"
                             secondary=" 2022년 3월 4일(금) ~ 2022년 3월 11일(금)"
                         />
-                        <ArrowForwardIos />
                     </ListItemButton>
                     <ListItemButton href="#" disabled={true}>
                         <ListItemText
