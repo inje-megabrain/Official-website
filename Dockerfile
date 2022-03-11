@@ -4,14 +4,15 @@ ENV PORT 3000
 
 USER root
 
-WORKDIR /usr/src/app
+LABEL "purpose"="Official Website Docker"
 
-COPY package*.json ./
+RUN mkdir /frontend
+
+WORKDIR /frontend
+
+COPY . /frontend
+
 RUN yarn install
-
-COPY ./ ./
-
-ENV NODE_ENV production
 
 RUN yarn run build
 
