@@ -9,7 +9,13 @@ const Home: NextPage = () => {
             <h1>지원하기</h1>
             <Paper variant="outlined" >
                 <List>
-                    <ListItemButton component="a" href="/apply/2022-1">
+                    <ListItemButton href="#" disabled={true}>
+                        <ListItemText
+                            primary="2022년 2학기 재학생 정회원"
+                            secondary=" 2022년 9월 중"
+                        />
+                    </ListItemButton>
+                    <ListItemButton component="a" href="#" disabled={true}>
                         <ListItemText
                             primary="2022년 1학기 신입생 준회원"
                             secondary=" 2022년 3월 4일(금) ~ 2022년 3월 11일(금)"
