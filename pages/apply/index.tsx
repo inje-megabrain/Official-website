@@ -11,8 +11,8 @@ const Home: NextPage = () => {
                 <List>
                     <ListItemButton href="#" disabled={true}>
                         <ListItemText
-                            primary="2022년 2학기 재학생 정회원"
-                            secondary=" 2022년 9월 중"
+                            primary="2022년 2학기 준회원 및 정회원"
+                            secondary=" 2022년 2학기 초 예정"
                         />
                     </ListItemButton>
                     <ListItemButton component="a" href="#" disabled={true}>
