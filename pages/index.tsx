@@ -25,8 +25,8 @@ const Main: NextPage = () => {
           size={50}
           css={{
             textGradient: "45deg, $blue600 -20%, $pink600 50%",
-            mx: 50,
-            mt: 50,
+            mx: 40,
+            mt: 40,
             mb: 10,
           }}
           weight="bold"
@@ -38,17 +38,17 @@ const Main: NextPage = () => {
           size={30}
           css={{
             textGradient: "45deg, $yellow600 -20%, $red600 100%",
-            mx: 50,
-            mb: 50,
+            mx: 40,
+            mb: 40,
           }}
           weight="bold"
         >
           SLASH 2022 토스 후원 스터디 그룹 선정
         </Text>
       </Container>
-      <Container gap={0}>
+      <Container gap={1}>
         <Row>
-          <Grid.Container gap={2} justify="center">
+          <Grid.Container gap={1} justify="center">
             <Grid sm={12} md={6}>
               <Card variant="bordered">
                 <Card.Header>
@@ -79,11 +79,6 @@ const Main: NextPage = () => {
                 </Card.Body>
               </Card>
             </Grid>
-          </Grid.Container>
-        </Row>
-        <Spacer y={1} />
-        <Row>
-          <Grid.Container gap={2} justify="center">
             <Grid sm={12} md={4}>
               <Card css={{ $$cardColor: "$colors$primary" }}>
                 <Card.Header>
@@ -177,7 +172,7 @@ const Main: NextPage = () => {
                     flat
                     auto
                     as="a"
-                    href="https://github.com/inje-megabrain/mega_power"
+                    href="/apply"
                     rounded
                     css={{ color: "#94f9f0", bg: "#94f9f026" }}
                   >
@@ -195,7 +190,6 @@ const Main: NextPage = () => {
             </Grid>
           </Grid.Container>
         </Row>
-        <Spacer y={1} />
         <Link href="/apply" css={{ width: "100%", textAlign: "center" }}>
           <Button
             ghost
@@ -219,7 +213,6 @@ const Main: NextPage = () => {
             </Text>
           </Button>
         </Link>
-        <Spacer y={1} />
         <Member />
         <Spacer y={1} />
       </Container>
