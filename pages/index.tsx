@@ -209,7 +209,7 @@ const Main: NextPage = () => {
               weight="bold"
               transform="uppercase"
             >
-              2022년도 2학기 회원 모집 예정
+              2022년도 2학기 회원 모집
             </Text>
           </Button>
         </Link>

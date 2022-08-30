@@ -17,10 +17,10 @@ const Home: NextPage = () => {
         <Text h2>지원하기</Text>
         <Paper>
           <List>
-            <ListItemButton href="#" disabled={true}>
+            <ListItemButton href="https://ad21pifdjli.typeform.com/to/lL9KWlfO">
               <ListItemText
-                primary="2022년 2학기 준회원 및 정회원"
-                secondary=" 2022년 2학기 초 예정"
+                primary="2022년 2학기 신입생 및 개발자"
+                secondary=" 2022년 8월 30일(화) ~ 2022년 9월 6일(화)"
               />
             </ListItemButton>
             <ListItemButton component="a" href="#" disabled={true}>
