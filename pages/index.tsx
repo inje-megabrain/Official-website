@@ -45,10 +45,32 @@ const Main: NextPage = () => {
         >
           SLASH 2022 토스 후원 스터디 그룹 선정
         </Text>
+        <Link href="/apply" css={{ width: "100%", textAlign: "center"}}>
+        <Button
+          shadow
+          color="error"
+          size="xl"
+          css={{
+            width: "100%",
+            height: 80,
+            textAlign: "center",
+            my: 30,
+          }}
+        >
+          <Text
+            css={{ color: "inherit" }}
+            size={22}
+            weight="bold"
+            transform="uppercase"
+          >
+            2022년도 2학기 회원 모집
+          </Text>
+        </Button>
+      </Link>
       </Container>
       <Container gap={1}>
         <Row>
-          <Grid.Container gap={1} justify="center">
+          <Grid.Container gap={2} justify="center">
             <Grid sm={12} md={6}>
               <Card variant="bordered">
                 <Card.Header>
@@ -190,29 +212,6 @@ const Main: NextPage = () => {
             </Grid>
           </Grid.Container>
         </Row>
-        <Link href="/apply" css={{ width: "100%", textAlign: "center" }}>
-          <Button
-            ghost
-            shadow
-            color="primary"
-            size="xl"
-            css={{
-              width: "100%",
-              height: 80,
-              textAlign: "center",
-              my: 30,
-            }}
-          >
-            <Text
-              css={{ color: "inherit" }}
-              size={22}
-              weight="bold"
-              transform="uppercase"
-            >
-              2022년도 2학기 회원 모집
-            </Text>
-          </Button>
-        </Link>
         <Member />
         <Spacer y={1} />
       </Container>
