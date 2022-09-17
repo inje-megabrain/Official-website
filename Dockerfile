@@ -1,19 +1,16 @@
-FROM node:latest
+FROM node:alpine
 
 ENV PORT 3000
 
-USER root
+WORKDIR /usr/src/app
 
-LABEL "purpose"="Official Website Docker"
+COPY package*.json ./
+RUN npm install
 
-RUN mkdir /frontend
+COPY ./ ./
 
-WORKDIR /frontend
+ENV NODE_ENV production
 
-COPY . /frontend
+RUN npm run build
 
-RUN yarn install
-
-RUN yarn run build
-
-CMD ["yarn", "run", "start"]
+CMD ["npm", "run", "start"]

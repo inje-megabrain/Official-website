@@ -45,28 +45,31 @@ const Main: NextPage = () => {
         >
           SLASH 2022 토스 후원 스터디 그룹 선정
         </Text>
-        <Link href="/apply" css={{ width: "100%", textAlign: "center"}}>
-        <Button
-          shadow
-          color="error"
-          size="xl"
-          css={{
-            width: "100%",
-            height: 80,
-            textAlign: "center",
-            my: 30,
-          }}
+        <Link
+          href="https://recruit.megabrain.kr"
+          css={{ width: "100%", textAlign: "center" }}
         >
-          <Text
-            css={{ color: "inherit" }}
-            size={22}
-            weight="bold"
-            transform="uppercase"
+          <Button
+            color="gradient"
+            rounded
+            bordered
+            css={{
+              width: "100%",
+              height: 80,
+              textAlign: "center",
+              my: 30,
+            }}
           >
-            2022년도 2학기 회원 모집
-          </Text>
-        </Button>
-      </Link>
+            <Text
+              css={{ color: "inherit" }}
+              size={22}
+              weight="bold"
+              transform="uppercase"
+            >
+              회원 모집 공고
+            </Text>
+          </Button>
+        </Link>
       </Container>
       <Container gap={1}>
         <Row>
