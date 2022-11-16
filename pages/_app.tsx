@@ -28,6 +28,7 @@ const DEFAULT_SEO = {
   },
 };
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 function MyApp({ Component, pageProps }) {
   return (

@@ -1,7 +1,7 @@
 import { Button, Container, Text } from "@nextui-org/react";
 import { NextPage } from "next"
 import Link from "next/link";
-import bgImg from "../../public/images/megacon-22-bg.jpeg";
+import bgImg from "../../public/images/megacon-22-bg.webp";
 import { NextSeo } from 'next-seo';
 
 const Con2022: NextPage = () => {
@@ -28,7 +28,7 @@ const Con2022: NextPage = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         }}>
-            <div style={{ paddingTop: 150, paddingBottom: 150, overflow: 'scroll', display: 'flex',
+            <div style={{ paddingTop: 150, paddingBottom: 150, display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center'}} className="md:h-[100vh] sm:h-[60vh]">
@@ -75,8 +75,10 @@ const Con2022: NextPage = () => {
                 <Text className="text-white text-4xl mb-4 font-bold">Sessions</Text>
                 <hr className="bg-white w-40 h-2"/>
                 <Text className="text-3xl my-14 text-gray-300">준비중</Text>
-                <Link  href={"https://ad21pifdjli.typeform.com/to/B3yfBTC5"} ><button className="text-xl bg-slate-500 hover:bg-sky-700 py-3 px-6 rounded-xl">세션 발표 신청</button></Link>
-                <Text className="text-3xl text-gray-300 mt-8">프론트엔드, 백엔드, 보안, 팀빌딩 등</Text>
+                <Link  href={"https://ad21pifdjli.typeform.com/to/B3yfBTC5"} >
+                    <button className="text-xl bg-slate-500 hover:bg-sky-700 py-3 px-6 rounded-xl">세션 발표 신청</button>
+                </Link>
+                <Text className="text-3xl text-gray-300 mt-8">프론트엔드, 백엔드, 보안, 인공지능 등</Text>
                 <p className="text-gray-300 text-3xl mt-4">2022년 11월 16일 ~ 23일</p>
                 </div>
             </div>
