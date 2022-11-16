@@ -93,7 +93,7 @@ export const memberList = [
   {
     name: "구본웅",
     position: "Backend Engineer",
-    year: 22,
+    year: 20,
     github: "https://github.com/DoubleDeltas",
     detail: "",
   },

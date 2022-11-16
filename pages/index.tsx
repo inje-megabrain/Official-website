@@ -15,16 +15,18 @@ import {
 } from "@nextui-org/react";
 import Member from "./member";
 import tossImg from "../public/images/project/toss.png";
+import { useRouter } from "next/router";
 
 const Main: NextPage = () => {
+  const router = useRouter()
   return (
     <>
-      <Container>
+      <div>
         <Text
           h1
           size={50}
+          color="primary"
           css={{
-            textGradient: "45deg, $blue600 -20%, $pink600 50%",
             mx: 40,
             mt: 40,
             mb: 10,
@@ -35,7 +37,7 @@ const Main: NextPage = () => {
         </Text>
         <Text
           h1
-          size={30}
+          size={25}
           css={{
             textGradient: "45deg, $yellow600 -20%, $red600 100%",
             mx: 40,
@@ -43,21 +45,20 @@ const Main: NextPage = () => {
           }}
           weight="bold"
         >
-          SLASH 2022 토스 후원 스터디 그룹 선정
+          SLASH 2022 토스 후원 스터디 그룹
         </Text>
-        <Link
+        {/* <Link
           href="https://recruit.megabrain.kr"
           css={{ width: "100%", textAlign: "center" }}
         >
           <Button
-            color="gradient"
-            rounded
+            color="default"
             bordered
+            auto
             css={{
               width: "100%",
-              height: 80,
               textAlign: "center",
-              my: 30,
+              p: 30
             }}
           >
             <Text
@@ -69,8 +70,54 @@ const Main: NextPage = () => {
               회원 모집 공고
             </Text>
           </Button>
+          </Link> */}
+      </div>
+      <div style={{ background: 'black', paddingTop: 80, paddingBottom: 80, textAlign: 'center', marginBottom: 20, width: '100%', marginLeft: 0, marginTop: 0}}>
+      <Text
+        h1
+        size={40}
+        css={{
+          textGradient: "45deg, $blue600 -20%, $red600 70%",
+          mb: 40
+        }}
+        weight="bold"
+      >
+        MEGACON 2022
+      </Text>
+      <Text
+        h1
+        size={50}
+        css={{
+          textGradient: "45deg, $purple600 -20%, $blue600 80%",
+          mb: 40
+        }}
+        weight="bold"
+      >
+        No efforts,<br/>
+        No Success.
+      </Text>
+      <Link
+          href="/con-2022"
+          css={{  textAlign: "center", display: 'inline' }}
+        >
+          <Button
+            shadow color="gradient" css={{ display: 'inline',px: 30, height: 70, '&:hover': {
+              background: '#000000',
+              color: '#FFFFFF',
+              
+            },}}
+          >
+            <Text
+              css={{ color: "white" }}
+              size={22}
+              weight="bold"
+              transform="uppercase"
+            >
+              더 알아보기
+            </Text>
+          </Button>
         </Link>
-      </Container>
+      </div>
       <Container gap={1}>
         <Row>
           <Grid.Container gap={2} justify="center">
@@ -197,7 +244,7 @@ const Main: NextPage = () => {
                     flat
                     auto
                     as="a"
-                    href="/apply"
+                    href="https://recruit.megabrain.kr"
                     rounded
                     css={{ color: "#94f9f0", bg: "#94f9f026" }}
                   >
