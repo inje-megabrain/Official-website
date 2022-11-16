@@ -83,4 +83,18 @@ export const memberList = [
     github: "https://github.com/qhrud00",
     detail: "",
   },
+  {
+    name: "이병진",
+    position: "Frontend Engineer",
+    year: 20,
+    github: "https://github.com/ByungJin-Lee",
+    detail: "",
+  },
+  {
+    name: "구본웅",
+    position: "Backend Engineer",
+    year: 22,
+    github: "https://github.com/DoubleDeltas",
+    detail: "",
+  },
 ];
