@@ -2,9 +2,28 @@ import { Button, Container, Text } from "@nextui-org/react";
 import { NextPage } from "next"
 import Link from "next/link";
 import bgImg from "../../public/images/megacon-22-bg.jpeg";
+import { NextSeo } from 'next-seo';
 
 const Con2022: NextPage = () => {
     return(
+        <>
+        <NextSeo
+        title="MEGACON 2022"
+        description="No efforts, No Success. Developer Conference by Megabrain"
+        openGraph={{
+            type: 'website',
+            url: 'https://www.megabrain.kr',
+            title: 'Megabrain',
+            description: 'No efforts, No Success. Developer Conference by Megabrain',
+            images: [
+                {
+                    url: '',
+                    width: 800,
+                    height: 400,
+                },
+            ],
+        }}
+    />
         <div style={{background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${bgImg.src})`, color: 'white', minHeight: '100vh' ,backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', padding: 0,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -63,6 +82,7 @@ const Con2022: NextPage = () => {
             </div>
             <div className="bg-black py-7"><p className="bg-black text-white text-center text-xl">Copyright ⓒ 2022 by Megabrain.</p></div>
         </div>
+        </>
     )
 }
 
