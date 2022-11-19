@@ -62,18 +62,19 @@ const Con2022: NextPage = () => {
       </div>
             </div>
             <div className="bg-black md:h-[60vh] sm:h-[40vh] text-center py-40 flex flex-col items-center justify-center">
-                <div>
-                <Text className="text-white text-2xl md:text-4xl sm:text-2xl">메가브레인에서 오프라인 컨퍼런스를 개최합니다.</Text>
-                <Text className="text-white text-2xl md:text-4xl sm:text-2xl">다양한 기술과 서비스를 만들며 겪은 성장 경험을</Text>
-                <Text className="text-white text-2xl md:text-4xl sm:text-2xl">함께 나누고 배우고 성장해요</Text>
-                <Text className="text-white text-2xl md:text-4xl sm:text-2xl mt-4">2022년 12월 2일(금) PM6:00</Text>
-                <Text className="text-white text-2xl md:text-4xl sm:text-2xl">인제대학교 E동 대강당</Text>
+                <div className="text-center items-center justify-center flex flex-col">
+                <Text className="text-white text-2xl md:text-4xl sm:text-2xl mb-4">메가브레인에서 오프라인 컨퍼런스를 개최합니다.</Text>
+                <Text className="text-white text-2xl md:text-4xl sm:text-2xl mb-4">다양한 기술과 서비스를 만들며 겪은 성장 경험을</Text>
+                <Text className="text-white text-2xl md:text-4xl sm:text-2xl mb-6">함께 나누고 배우고 성장해요.</Text>
+                <hr className="bg-white w-40 h-1"/>
+                <Text className="text-white text-2xl md:text-4xl sm:text-2xl mt-6">2022년 12월 2일(금) PM6:00</Text>
+                <Text className="text-white text-2xl md:text-4xl sm:text-2xl mt-4">인제대학교 E동 대강당</Text>
                 </div>
             </div>
             <div className="bg-black md:h-[60vh] sm:h-[40vh] text-center py-40 flex flex-col items-center justify-center">
                 <div className="text-center items-center flex flex-col">
                 <Text className="text-white text-4xl mb-4 font-bold">Sessions</Text>
-                <hr className="bg-white w-40 h-2"/>
+                <hr className="bg-white w-40 h-1"/>
                 <Text className="text-3xl my-14 text-gray-300">준비중</Text>
                 <Link  href={"https://ad21pifdjli.typeform.com/to/B3yfBTC5"} >
                     <button className="text-xl bg-slate-500 hover:bg-sky-700 py-3 px-6 rounded-xl">세션 발표 신청</button>
