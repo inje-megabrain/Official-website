@@ -1,5 +1,4 @@
-import type { NextPage } from "next";
-import { Card, Grid, Row, Text, Link } from "@nextui-org/react";
+import { Card, Grid, Link, Row, Text } from "@nextui-org/react";
 import { memberList } from "../src/memberList";
 
 const Member = () => {

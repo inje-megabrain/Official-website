@@ -1,8 +1,10 @@
-import { Button, Container, Text } from "@nextui-org/react";
-import { NextPage } from "next"
+import { Text } from "@nextui-org/react";
+import { NextPage } from "next";
+import { NextSeo } from 'next-seo';
 import Link from "next/link";
 import bgImg from "../../public/images/megacon-22-bg.webp";
-import { NextSeo } from 'next-seo';
+import TossLogo from "../../public/images/toss-logo.webp";
+import { SessionsIntro } from "./Sessions";
 
 const Con2022: NextPage = () => {
     return(
@@ -58,7 +60,8 @@ const Con2022: NextPage = () => {
         No efforts,<br/>
         No Success.
       </Text>
-      <Text weight="bold" className="fadein text-white text-center text-2xl">A DEVELOPER CONFERENCE BY MEGABRAIN</Text>
+      <Text weight="bold" className="fadein text-white text-center text-2xl font-light">A DEVELOPER CONFERENCE BY MEGABRAIN</Text>
+      <a href="https://toss.im/"><p className="fadein text-white text-center text-2xl mt-3 font-bold">Sponsored by <img src={TossLogo.src} className="w-16 h-16 inline"/> TOSS</p></a>
       </div>
             </div>
             <div className="bg-black md:h-[60vh] sm:h-[40vh] text-center py-40 flex flex-col items-center justify-center">
@@ -75,6 +78,11 @@ const Con2022: NextPage = () => {
                 <div className="text-center items-center flex flex-col">
                 <Text className="text-white text-4xl mb-4 font-bold">Sessions</Text>
                 <hr className="bg-white w-40 h-1"/>
+                {
+                    SessionsIntro.map((value)=><div key={value.title}>
+                        <p>{value.name}</p>
+                    </div>)
+                }
                 <Text className="text-3xl my-14 text-gray-300">준비중</Text>
                 <Link  href={"https://ad21pifdjli.typeform.com/to/B3yfBTC5"} >
                     <button className="text-xl bg-slate-500 hover:bg-sky-700 py-3 px-6 rounded-xl">세션 발표 신청</button>
