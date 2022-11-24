@@ -4,7 +4,8 @@ import { NextSeo } from 'next-seo';
 import Link from "next/link";
 import bgImg from "../../public/images/megacon-22-bg.webp";
 import TossLogo from "../../public/images/toss-logo.webp";
-import { SessionsIntro } from "./Sessions";
+import Sessions from "./Sessions";
+import { TbBrandGithub } from "react-icons/tb"
 
 const Con2022: NextPage = () => {
     return(
@@ -74,24 +75,31 @@ const Con2022: NextPage = () => {
                 <Text className="text-white text-2xl md:text-4xl sm:text-2xl mt-4">인제대학교 E동 대강당</Text>
                 </div>
             </div>
-            <div className="bg-black md:h-[60vh] sm:h-[40vh] text-center py-40 flex flex-col items-center justify-center">
-                <div className="text-center items-center flex flex-col">
-                <Text className="text-white text-4xl mb-4 font-bold">Sessions</Text>
-                <hr className="bg-white w-40 h-1"/>
+            <div className="bg-black md:min-h-[60vh] sm:min-h-[40vh] text-center py-10 flex flex-col items-center justify-center w-full">
+                <div className="text-center items-center flex flex-col w-full justify-center">
+                <Text className="text-white text-4xl mb-4 font-bold text-center w-full">Sessions</Text>
+                <hr className="bg-white w-40 h-1 mb-10"/>
                 {
-                    SessionsIntro.map((value)=><div key={value.title}>
-                        <p>{value.name}</p>
+                    Sessions.map((sessionHeader)=>
+                    <div className="md:w-3/4 lg:w-2/4 justify-center text-center mt-5 mb-10" key={sessionHeader.title}>
+                        <p className="text-4xl my-4 font-bold">{sessionHeader.title}</p>
+                        {
+                            sessionHeader.data.map((session)=>
+                            <div className="w-full text-start bg-gray-800 rounded-2xl py-5 px-7 my-3" key={session.title}>
+                                 <p className="text-2xl font-bold">{session.title}</p>
+                                 <a href={session.link} target='_blank' rel="noreferrer">
+                                    <p className="font-normal text-xl">{session.name} / {session.info} <TbBrandGithub className="inline ml-2 mb-1 text-2xl"/></p>
+                                </a>
+                            </div>)
+                        }
                     </div>)
                 }
-                <Text className="text-3xl my-14 text-gray-300">준비중</Text>
-                <Link  href={"https://ad21pifdjli.typeform.com/to/B3yfBTC5"} >
-                    <button className="text-xl bg-slate-500 hover:bg-sky-700 py-3 px-6 rounded-xl">세션 발표 신청</button>
-                </Link>
-                <Text className="text-3xl text-gray-300 mt-8">프론트엔드, 백엔드, 보안, 인공지능 등</Text>
-                <p className="text-gray-300 text-3xl mt-4">2022년 11월 16일 ~ 23일</p>
                 </div>
             </div>
-            <div className="bg-black py-7"><p className="bg-black text-white text-center text-xl">Copyright ⓒ 2022 by Megabrain.</p></div>
+            <div className="bg-black py-20"><Link href="/">
+                <p className="bg-black text-white text-center text-xl">Copyright ⓒ 2022 by <b>Megabrain.</b></p>
+                </Link>
+                </div>
         </div>
         </>
     )
