@@ -16,13 +16,13 @@ const Con2022: NextPage = () => {
         openGraph={{
           type: "website",
           url: "https://megabrain.kr/con-2022",
-          title: "Megabrain",
+          title: "MEGACON 2022",
           description: "Developer Conference by Megabrain",
           images: [
             {
-              url: "../../public/images/megacon-22-thumbnail.webp",
-              width: 600,
-              height: 299,
+              url: "/images/megacon-22-thumbnail.png",
+              width: 1200,
+              height: 600,
             },
           ],
         }}
