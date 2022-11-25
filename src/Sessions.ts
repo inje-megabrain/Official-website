@@ -1,12 +1,12 @@
 export const Sessions = [
   {
-    title: "Intro",
+    title: "Keynote",
     data: [
       {
         name: "박영건",
         info: "컴퓨터공학부 18 | 메가브레인",
         link: "https://www.github.com/jadru",
-        title: "Intro",
+        title: "인트로",
       },
       {
         name: "박성훈",
@@ -19,6 +19,12 @@ export const Sessions = [
   {
     title: "Backend",
     data: [
+      {
+        name: "이성현",
+        info: "컴퓨터공학부 18 | 메가브레인",
+        link: "https://www.github.com/sleeg00",
+        title: "Spring을 기초로 Redis 이해하기",
+      },
       {
         name: "박성훈",
         info: "컴퓨터공학부 18 | 메가브레인",
@@ -55,16 +61,22 @@ export const Sessions = [
     title: "Frontend",
     data: [
       {
-        name: "이병진",
+        name: "이나린",
         info: "컴퓨터공학부 20 | 메가브레인",
-        link: "https://www.github.com/ByungJin-Lee",
-        title: "React Hook으로 무한 스크롤 설계와 구현",
+        link: "https://www.github.com/narinn-star",
+        title: "React Custom Hook 제작기",
       },
       {
         name: "최진서",
         info: "컴퓨터공학부 18 | 메가브레인",
         link: "https://www.github.com/Dark-jin",
         title: "React 대시보드 제작기",
+      },
+      {
+        name: "이병진",
+        info: "컴퓨터공학부 20 | 메가브레인",
+        link: "https://www.github.com/ByungJin-Lee",
+        title: "React Library 사용이 꼭 올바른가?",
       },
       {
         name: "박영건",
