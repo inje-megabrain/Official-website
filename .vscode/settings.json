@@ -9,5 +9,7 @@
         "source.fixAll.eslint": true
     },
     "prettier.singleQuote": true,
-    "prettier.requireConfig": true
+    "prettier.requireConfig": true,
+    "prettier.singleAttributePerLine": true,
+    "prettier.bracketSameLine": true,
 }

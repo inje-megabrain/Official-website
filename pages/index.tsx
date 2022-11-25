@@ -18,7 +18,7 @@ import tossImg from "../public/images/project/toss.png";
 import { useRouter } from "next/router";
 
 const Main: NextPage = () => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <>
       <div>
@@ -72,40 +72,55 @@ const Main: NextPage = () => {
           </Button>
           </Link> */}
       </div>
-      <div style={{ background: 'black', paddingTop: 80, paddingBottom: 80, textAlign: 'center', marginBottom: 20, width: '100%', marginLeft: 0, marginTop: 0}}>
-      <Text
-        h1
-        size={40}
-        css={{
-          textGradient: "45deg, $blue600 -20%, $red600 70%",
-          mb: 40
+      <div
+        style={{
+          background: "black",
+          paddingTop: 80,
+          paddingBottom: 80,
+          textAlign: "center",
+          marginBottom: 20,
+          width: "100%",
+          marginLeft: 0,
+          marginTop: 0,
         }}
-        weight="bold"
       >
-        MEGACON 2022
-      </Text>
-      <Text
-        h1
-        size={50}
-        css={{
-          textGradient: "45deg, $purple600 -20%, $blue600 80%",
-          mb: 40
-        }}
-        weight="bold"
-      >
-        No efforts,<br/>
-        No Success.
-      </Text>
-      <Link
-          href="/con-2022"
-          css={{  textAlign: "center", display: 'inline' }}
+        <Text
+          h1
+          size={40}
+          css={{
+            textGradient: "45deg, $blue600 -20%, $red600 70%",
+            mb: 40,
+          }}
+          weight="bold"
         >
+          MEGACON 2022
+        </Text>
+        <Text
+          h1
+          size={50}
+          css={{
+            textGradient: "45deg, $purple600 -20%, $blue600 80%",
+            mb: 40,
+          }}
+          weight="bold"
+        >
+          No efforts,
+          <br />
+          No Success.
+        </Text>
+        <Link href="/con-2022" css={{ textAlign: "center", display: "inline" }}>
           <Button
-            shadow color="gradient" css={{ display: 'inline',px: 30, height: 70, '&:hover': {
-              background: '#000000',
-              color: '#FFFFFF',
-              
-            },}}
+            shadow
+            color="gradient"
+            css={{
+              display: "inline",
+              px: 30,
+              height: 70,
+              "&:hover": {
+                background: "#000000",
+                color: "#FFFFFF",
+              },
+            }}
           >
             <Text
               css={{ color: "white" }}

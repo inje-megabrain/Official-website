@@ -1,5 +1,5 @@
-import '../styles/globals.css';
-import { NextUIProvider } from '@nextui-org/react';
+import "../styles/globals.css";
+import { NextUIProvider } from "@nextui-org/react";
 import { DefaultSeo } from "next-seo";
 
 const DEFAULT_SEO = {
@@ -22,9 +22,9 @@ const DEFAULT_SEO = {
     // ]
   },
   twitter: {
-      handle: '@megabrain',
-      site: '@megabrain',
-      cardType: 'summary_large_image',
+    handle: "@megabrain",
+    site: "@megabrain",
+    cardType: "summary_large_image",
   },
 };
 
