@@ -1,13 +1,13 @@
-FROM node:alpine
-
-ENV PORT 3000
+FROM mhart/alpine-node:slim-14
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY package.json ./
+COPY yarn.lock ./
+
 RUN yarn
 
-COPY ./ ./
+COPY . .
 
 ENV NODE_ENV production
 

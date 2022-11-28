@@ -14,4 +14,5 @@ module.exports = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
+  output: 'standalone',
 };
