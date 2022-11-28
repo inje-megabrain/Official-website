@@ -10,9 +10,10 @@ on:
 
 env:
   # Use docker.io for Docker Hub if empty
-  REGISTRY: docker.io
+  REGISTRY: harbor.megabrain.kr
   # github.repository as <account>/<repo>
-  IMAGE_NAME: jadru/megabrain-website
+  IMAGE_NAME: mega/website
+  PROJECT: mega
 
 jobs:
   build:
@@ -34,8 +35,8 @@ jobs:
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
          registry: ${{ env.REGISTRY }}
-         username: ${{ github.actor }}
-         password: ${{ secrets.DOCKERHUB_TOKEN }}
+         username: ${{ env.PROJECT }}
+         password: ${{ secrets.MEGA_HARBOR_TOKEN }}
 
       - name: Extract Docker metadata
         id: meta
