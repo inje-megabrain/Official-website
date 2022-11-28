@@ -112,7 +112,7 @@ const Con2022: NextPage = () => {
         </div>
         <div className="bg-black md:min-h-[60vh] sm:min-h-[40vh] text-center py-10 flex flex-col items-center justify-center w-full">
           <div className="text-center items-center flex flex-col w-full justify-center">
-            <Text className="text-white text-4xl mb-4 font-bold text-center w-full">
+            <Text className="text-white text-5xl mb-4 font-light text-center w-full">
               Sessions
             </Text>
             <hr className="bg-white w-40 h-1 mb-10" />

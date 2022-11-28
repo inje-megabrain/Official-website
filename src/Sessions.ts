@@ -6,7 +6,7 @@ export const Sessions = [
         name: "박영건",
         info: "컴퓨터공학부 18 | 메가브레인",
         link: "https://www.github.com/jadru",
-        title: "인트로",
+        title: "MEGACON 2022: Intro",
       },
       {
         name: "박성훈",
@@ -82,13 +82,24 @@ export const Sessions = [
         name: "박영건",
         info: "컴퓨터공학부 18 | 메가브레인",
         link: "https://www.github.com/jadru",
-        title: "React 대시보드를 위한 디자인 시스템 설계와 구현",
+        title: "React 대시보드를 위한 디자인 시스템 설계",
+      },
+    ],
+  },
+  {
+    title: "Dev. Log",
+    data: [
+      {
+        name: "임채성",
+        info: "컴퓨터공학과 22 | 메가브레인",
+        link: "https://www.github.com/puleugo",
+        title: "소프트웨어 마에스트로: 리서치부터 앱 출시까지",
       },
       {
         name: "신종웅",
         info: "컴퓨터공학과 21 | 메가브레인",
         link: "https://www.github.com/ShinJongUng",
-        title: "나의 DND 기록 - React Navite, 협업, ETC",
+        title: "나의 DND 기록 - React Native, 협업, ...",
       },
     ],
   },
