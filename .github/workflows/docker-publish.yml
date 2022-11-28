@@ -31,12 +31,9 @@ jobs:
 
       - name: Setup Docker buildx
         uses: docker/setup-buildx-action@79abd3f86f79a9d68a23c75a09a9a85889262adf
+        
       - name: Log into registry ${{ env.REGISTRY }}
-        uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
-        with:
-         registry: ${{ env.REGISTRY }}
-         username: ${{ env.USERNAME }}
-         password: ${{ secrets.MEGA_HARBOR_TOKEN }}
+        run: echo ${{ secrets.MEGA_HARBOR_TOKEN }} | docker login ${{ env.REGISTRY }} -u ${{ env.admin }} --password-stdin
 
       - name: Extract Docker metadata
         id: meta
