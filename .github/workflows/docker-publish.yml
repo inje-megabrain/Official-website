@@ -33,7 +33,7 @@ jobs:
         uses: docker/setup-buildx-action@79abd3f86f79a9d68a23c75a09a9a85889262adf
         
       - name: Log into registry ${{ env.REGISTRY }}
-        run: echo ${{ secrets.MEGA_HARBOR_TOKEN }} | docker login ${{ env.REGISTRY }} -u ${{ env.admin }} --password-stdin
+        run: docker login ${{ env.REGISTRY }} -u ${{ env.admin }} -p  ${{ secrets.MEGA_HARBOR_TOKEN }}
 
       - name: Extract Docker metadata
         id: meta
