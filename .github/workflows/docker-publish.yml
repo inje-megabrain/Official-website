@@ -13,7 +13,6 @@ env:
   REGISTRY: harbor.megabrain.kr
   # github.repository as <account>/<repo>
   IMAGE_NAME: mega/website
-  PROJECT: mega
   USERNAME: admin
 
 jobs:
