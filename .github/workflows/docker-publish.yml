@@ -14,6 +14,7 @@ env:
   # github.repository as <account>/<repo>
   IMAGE_NAME: mega/website
   PROJECT: mega
+  USERNAME: jadru
 
 jobs:
   build:
@@ -35,7 +36,7 @@ jobs:
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
          registry: ${{ env.REGISTRY }}
-         username: ${{ env.PROJECT }}
+         username: ${{ env.USERNAME }}
          password: ${{ secrets.MEGA_HARBOR_TOKEN }}
 
       - name: Extract Docker metadata
