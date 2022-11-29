@@ -111,31 +111,37 @@ const Con2022: NextPage = () => {
           </div>
         </div>
         <div className="bg-black md:min-h-[60vh] sm:min-h-[40vh] text-center py-10 flex flex-col items-center justify-center w-full">
-          <div className="text-center items-center flex flex-col w-full justify-center">
-            <Text className="text-white text-5xl mb-4 font-light text-center w-full">
-              Sessions
-            </Text>
-            <hr className="bg-white w-40 h-1 mb-10" />
+          <Text className="text-white text-5xl mb-4 font-light text-center w-full">
+            Sessions
+          </Text>
+          <hr className="bg-white w-40 h-1 mb-10" />
+          <div className="grid grid-cols-2 gap-3 p-5">
             {Sessions.map((session) =>
               session.type !== "break" ? (
                 <div
-                  className="w-full sm:w-full md:w-full lg:w-1/3 text-start bg-gray-800 rounded-2xl py-6 px-8 mt-2"
+                  className="w-full flex flex-row items-center justify-between text-start bg-gray-800 rounded-2xl py-6 px-8 mt-2 sm:col-span-1 col-span-2 border-2 hover:border-white border-black"
                   key={session.title}
                 >
-                  <p className="text-2xl font-bold">{session.title}</p>
-                  <a href={session.link} target="_blank" rel="noreferrer">
-                    <p className="font-normal text-xl">
-                      <b className="font-light">
-                        {session.type} {" - "}
-                      </b>
-                      {session.name}, {session.info}{" "}
-                      <TbBrandGithub className="inline ml-2 mb-1 text-2xl" />
-                    </p>
-                  </a>
+                  <div>
+                    <p className="text-2xl font-bold">{session.title}</p>
+                    <a href={session.link} target="_blank" rel="noreferrer">
+                      <p className="font-light text-2xl">{session.type}</p>
+                      <p className="font-normal text-xl">
+                        {session.name}, {session.info}{" "}
+                        <TbBrandGithub className="inline ml-2 mb-1 text-2xl" />
+                      </p>
+                    </a>
+                  </div>
+                  <p className="text-6xl">
+                    {(session.type === "Frontend" && "💻") ||
+                      (session.type === "Backend" && "🚀") ||
+                      (session.type === "Keynote" && "🎉") ||
+                      "🪄"}
+                  </p>
                 </div>
               ) : (
                 <div
-                  className="w-full text-start rounded-2xl py-6 px-8 mt-2 flex justify-center"
+                  className="w-full text-start rounded-2xl py-6 px-8 mt-2 flex justify-center col-span-2"
                   key={session.title}
                 >
                   <p className="text-2xl">~ Break time ~</p>
