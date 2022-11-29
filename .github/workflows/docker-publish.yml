@@ -13,7 +13,7 @@ env:
   REGISTRY: harbor.megabrain.kr
   # github.repository as <account>/<repo>
   IMAGE_NAME: mega/website
-  DOCKER_REGISTRY_USERNAME: admin
+  DOCKER_REGISTRY_USERNAME: jadru
   DOCKER_REGISTRY_PASSWORD: ${{ secrets.MEGA_HARBOR_PW }}
 
 jobs:
