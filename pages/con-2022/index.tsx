@@ -119,16 +119,22 @@ const Con2022: NextPage = () => {
             {Sessions.map((session) =>
               session.type !== "break" ? (
                 <div
-                  className="w-full flex flex-row items-center justify-between text-start bg-gray-800 rounded-2xl py-6 px-8 mt-2 sm:col-span-1 col-span-2 border-2 hover:border-white border-black"
+                  className="w-full flex flex-row items-center justify-between text-start bg-gray-800 rounded-2xl py-6 px-6 mt-2 sm:col-span-1 col-span-2 border-2 hover:border-white border-black space-x-2"
                   key={session.title}
                 >
                   <div>
                     <p className="text-2xl font-bold">{session.title}</p>
                     <a href={session.link} target="_blank" rel="noreferrer">
-                      <p className="font-light text-2xl">{session.type}</p>
+                      <Text
+                        className="font-light text-2xl"
+                        css={{
+                          textGradient: "45deg, $yellow500 -20%, $red600 70%",
+                        }}
+                      >
+                        {session.type}
+                      </Text>
                       <p className="font-normal text-xl">
-                        {session.name}, {session.info}{" "}
-                        <TbBrandGithub className="inline ml-2 mb-1 text-2xl" />
+                        {session.name}, {session.info}
                       </p>
                     </a>
                   </div>
