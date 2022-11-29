@@ -116,28 +116,32 @@ const Con2022: NextPage = () => {
               Sessions
             </Text>
             <hr className="bg-white w-40 h-1 mb-10" />
-            {Sessions.map((sessionHeader) => (
-              <div
-                className="w-full max-w-lg justify-center text-center mt-5 mb-5 px-3"
-                key={sessionHeader.title}
-              >
-                <p className="text-4xl my-5 font-bold">{sessionHeader.title}</p>
-                {sessionHeader.data.map((session) => (
-                  <div
-                    className="w-full text-start bg-gray-800 rounded-2xl py-6 px-8 mt-2"
-                    key={session.title}
-                  >
-                    <p className="text-2xl font-bold">{session.title}</p>
-                    <a href={session.link} target="_blank" rel="noreferrer">
-                      <p className="font-normal text-xl">
-                        {session.name} - {session.info}{" "}
-                        <TbBrandGithub className="inline ml-2 mb-1 text-2xl" />
-                      </p>
-                    </a>
-                  </div>
-                ))}
-              </div>
-            ))}
+            {Sessions.map((session) =>
+              session.type !== "break" ? (
+                <div
+                  className="w-full sm:w-full md:w-full lg:w-1/3 text-start bg-gray-800 rounded-2xl py-6 px-8 mt-2"
+                  key={session.title}
+                >
+                  <p className="text-2xl font-bold">{session.title}</p>
+                  <a href={session.link} target="_blank" rel="noreferrer">
+                    <p className="font-normal text-xl">
+                      <b className="font-light">
+                        {session.type} {" - "}
+                      </b>
+                      {session.name}, {session.info}{" "}
+                      <TbBrandGithub className="inline ml-2 mb-1 text-2xl" />
+                    </p>
+                  </a>
+                </div>
+              ) : (
+                <div
+                  className="w-full text-start rounded-2xl py-6 px-8 mt-2 flex justify-center"
+                  key={session.title}
+                >
+                  <p className="text-2xl">~ Break time ~</p>
+                </div>
+              ),
+            )}
           </div>
         </div>
         <div className="bg-black py-20">
