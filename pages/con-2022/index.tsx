@@ -5,7 +5,7 @@ import Link from "next/link";
 import bgImg from "../../public/images/megacon-22-bg.webp";
 import TossLogo from "../../public/images/toss-logo.webp";
 import { Sessions } from "../../src/Sessions";
-import { TbBrandGithub } from "react-icons/tb";
+import Emoji from "a11y-react-emoji";
 
 const Con2022: NextPage = () => {
   return (
@@ -116,14 +116,16 @@ const Con2022: NextPage = () => {
           </Text>
           <hr className="bg-white w-40 h-1 mb-10" />
           <div className="grid grid-cols-2 gap-3 p-5">
-            {Sessions.map((session) =>
+            {Sessions.map((session, index) =>
               session.type !== "break" ? (
                 <div
                   className="w-full flex flex-row items-center justify-between text-start bg-gray-800 rounded-2xl py-6 px-6 mt-2 sm:col-span-1 col-span-2 border-2 hover:border-white border-black space-x-2"
                   key={session.title}
                 >
                   <div>
-                    <p className="text-2xl font-bold">{session.title}</p>
+                    <p className="text-2xl font-bold">
+                      {index + 1}. {session.title}
+                    </p>
                     <a href={session.link} target="_blank" rel="noreferrer">
                       <Text
                         className="font-light text-2xl"
@@ -138,19 +140,24 @@ const Con2022: NextPage = () => {
                       </p>
                     </a>
                   </div>
-                  <p className="text-6xl">
-                    {(session.type === "Frontend" && "💻") ||
+                  <Emoji
+                    className="text-6xl"
+                    symbol={
+                      (session.type === "Frontend" && "🌏") ||
                       (session.type === "Backend" && "🚀") ||
-                      (session.type === "Keynote" && "🎉") ||
-                      "🪄"}
-                  </p>
+                      (session.type === "Keynote" && "🎲") ||
+                      (session.type === "AI" && "🧠") ||
+                      (session.type === "IoT" && "💫") ||
+                      "🎯"
+                    }
+                  />
                 </div>
               ) : (
                 <div
                   className="w-full text-start rounded-2xl py-6 px-8 mt-2 flex justify-center col-span-2"
                   key={session.title}
                 >
-                  <p className="text-2xl">~ Break time ~</p>
+                  <p className="text-2xl"> Break time </p>
                 </div>
               ),
             )}

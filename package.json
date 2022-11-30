@@ -14,6 +14,7 @@
     "@nextui-org/react": "^1.0.0-beta.9",
     "@notionhq/client": "^2.1.1",
     "@typescript-eslint/parser": "^5.43.0",
+    "a11y-react-emoji": "^1.2.0",
     "axios": "^0.27.2",
     "framer-motion": "^7.6.7",
     "next": "12.2.4",
