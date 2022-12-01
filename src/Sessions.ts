@@ -15,9 +15,9 @@ export const Sessions = [
   },
   {
     name: "이성현",
-    info: "컴퓨터공학부 18 - 메가브레인",
+    info: "컴퓨터공학부 19 - 메가브레인",
     link: "https://www.github.com/sleeg00",
-    title: "Spring을 기초로 Redis 이해하기",
+    title: "백엔드 프레임워크 Spring 이해하기",
     type: "Backend",
   },
   {
